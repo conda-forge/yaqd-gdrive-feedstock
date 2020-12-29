@@ -5,11 +5,11 @@ Home: https://yaq.fyi
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-gdrive-feedstock/blob/master/LICENSE.txt)
 
 Summary: Daemon interface for writing files to Google Drive
 
-
+Development: https://gitlab.com/yaq/yaqd-gdrive
 
 Current build status
 ====================
