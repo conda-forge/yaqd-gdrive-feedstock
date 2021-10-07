@@ -1,5 +1,5 @@
 {% set name = "yaqd-gdrive" %}
-{% set version = "2020.12.0" %}
+{% set version = "2021.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5936105a4ce05554696bca64d830af4992c98adac7171105a812805ecf4590ad
+  sha256: 59ac6ddfd7e5c1ae82e4e9f6e376cf1ec28515712b3003c3dc82073f9d270fc8
 
 build:
   number: 0
