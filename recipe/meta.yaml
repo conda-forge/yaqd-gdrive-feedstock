@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 59ac6ddfd7e5c1ae82e4e9f6e376cf1ec28515712b3003c3dc82073f9d270fc8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-gdrive = yaqd_gdrive._gdrive:GDrive.main
@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
     - aiohttp
     - yaqd-core >=2020.06.3
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - aiohttp
     - yaqd-core >=2020.06.3
 
@@ -37,6 +37,7 @@ test:
     - yaqd-gdrive --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi
